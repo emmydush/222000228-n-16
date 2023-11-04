@@ -1,3 +1,4 @@
+//this programe displays the dowhile program
 public class dowhile2 {
     public static void main(String[] args) {
 
