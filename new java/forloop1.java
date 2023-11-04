@@ -1,3 +1,4 @@
+//this program displays  forloop 
 public class forloop1 {
     public static void main(String[] args) {
         int sum = 0;// Initialize a variable 'sum' to store the sum of numbers.
