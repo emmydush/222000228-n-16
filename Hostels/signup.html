@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hostel Management System - Sign Up</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        body {
+            background-image: url('https://www.example.com/background-image.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+}
+             
+        .container {
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 500px;
+            text-align: center;
+        }
+
+        .logo img {
+            max-width: 120px;
+            margin-bottom: 15px;
+        }
+
+        .logo h2 {
+            font-size: 24px;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+
+        form {
+            flex-direction: column;
+            gap: 0;
+        }
+
+        .form-group {
+           
+            gap: 10px;
+            justify-content: space-between;
+        }
+
+      
+            input[type="text"],
+            input[type="email"],
+            input[type="number"],
+            input[type="password"] {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 16px;
+            color: #333;
+            margin: 5px 0;
+            background-color: #f9f9f9;
+        }
+
+            input[type="text"]:focus,
+            input[type="email"]:focus,
+            input[type="number"]:focus,
+            input[type="password"]:focus {
+            border-color: #5c9e6b;
+            outline: none;
+            background-color: #fff;
+        }
+
+       
+        button {
+            padding: 14px;
+            background-color: #28a745;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #218838;
+        }
+
+        button:focus {
+            outline: none;
+        }
+
+        
+        .message {
+            margin-top: 20px;
+            color: red;
+            font-size: 14px;
+        }
+
+        .success-message {
+            color: green;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+       
+        <div class="logo">
+            <img src="download (1).png" alt="Hostel Management System Logo">
+            <h2>Hostel Management System</h2>
+        </div>
+
+     
+        <form action="signup.php" method="post">
+            <input type="text" name="student_number" placeholder="Student Number" required><br>
+            <input type="text" name="last_name" placeholder="Last Name" required><br>
+            <input type="text" name="first_name" placeholder="First Name" required><br>
+            <input type="text" name="gender" placeholder="Gender" required><br>
+            <input type="text" name="college" placeholder="College" required><br>
+            <input type="number" name="year_of_study" placeholder="Year of Study" required><br>
+            <input type="text" name="intake" placeholder="Food card" required><br>
+            <input type="text" name="username" placeholder="Username" required><br>
+            <input type="email" name="email" placeholder="Email" required><br>
+            <input type="password" name="password" placeholder="Password" required><br>
+            <button type="submit">Sign Up</button>
+        </form>
+    </div>
+</body>
+</html>

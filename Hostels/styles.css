@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-image: url('arton44169.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background-color: rgba(235, 236, 244, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 350px;
+}
+
+.logo img {
+    max-width: 200px;
+    margin-bottom: 20px;
+    width: 300px;
+}
+
+h2 {
+    margin-bottom: 20px;
+    font-size: 22px;
+    color: #333;
+}
+
+form input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #28a745;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+form button:hover {
+    background-color: #218838;
+}
+
+.forgot-pass {
+    text-align: right;
+    margin-top: -5px;
+    margin-bottom: 10px;
+}
+
+.forgot-pass a {
+    color: red;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.signup-link {
+    margin-top: 15px;
+}
+
+.signup-link a {
+    color: #007bff;
+    text-decoration: none;
+}
+

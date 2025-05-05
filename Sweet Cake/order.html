@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sweet Cake</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+}
+
+header {
+    background-color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #ccc;
+}
+
+.logo h1 {
+    font-size: 24px;
+    color: #333;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+footer {
+    background-color: #fff;
+    padding: 20px 50px;
+    border-top: 2px solid #ccc;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    flex: 1;
+    margin: 10px;
+}
+
+.footer-section h2, .footer-section h3 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.footer-section p, .footer-section ul, .footer-section li {
+    color: #666;
+    margin-bottom: 8px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li a {
+    text-decoration: none;
+    color: #666;
+}
+
+.footer-section ul li a:hover {
+    color: #000;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #999;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #fff;
+    padding: 10px 20px;
+    text-align: center;
+    border-bottom: 2px solid #ccc;
+}
+
+.logo h1 {
+    color: #333;
+}
+
+main {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    margin-bottom: 20px;
+    text-align: center;
+    color: #333;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #666;
+}
+
+input, select, button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #333;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+.hidden {
+    display: none;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #999;
+}
+
+
+</style>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Sweet Cake</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Product</a></li>
+                <li><a href="#">Blogs</a></li>
+                <li><a href="#">Review</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h2>Sweet Cake</h2>
+                <p>Lorem Ipsum Dolor, Sit Amet Consectetur Adipisicing Elit. Dicta Accusamus Maxime Quod.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Link</h3>
+                <ul>
+
+<form id="orderForm" action="process_order.php" method="POST">
+    <div class="form-group">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+    </div>
+
+    <div class="form-group">
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+    </div>
+
+    <div class="form-group">
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+    </div>
+
+    <div class="form-group">
+        <label for="items">Select Item</label>
+        <select id="items" name="items" required>
+            <option value="" disabled selected>Select an item</option>
+            <option value="Chocolate Cake">Chocolate Cake</option>
+            <option value="Vanilla Cake">Vanilla Cake</option>
+            <option value="Red Velvet Cake">Red Velvet Cake</option>
+            <option value="Cheesecake">Cheesecake</option>
+        </select>
+    </div>
+
+    <div class="form-group">
+        <label for="quantity">Quantity</label>
+        <input type="number" id="quantity" name="quantity" min="1" placeholder="Enter quantity" required>
+    </div>
+
+    <button type="submit">Place Order</button>
+</form>
